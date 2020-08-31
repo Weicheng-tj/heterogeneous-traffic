@@ -10,5 +10,5 @@ Here are all the python scripts used in the master thesis project "Safety Evalua
     
 --Final simulation    
   >>-- randomv.py                   __ Generate random vehicles and write into route files used in SUMO simulation  
-  >>-- output_processing.py        __ read the number of conflicts, number of lane-changing and simulation time from simulation output then write them into an excel file  
+  >>-- output_processing.py        __ Read the number of conflicts, number of lane-changing and simulation time from simulation output then write them into an excel file  
   
