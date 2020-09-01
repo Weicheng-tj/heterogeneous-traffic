@@ -1,4 +1,4 @@
-# get the speed performance indicator
+# calculate the speed performance indicator
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -47,6 +47,7 @@ sumo_stats = sumo_stats.set_index('id')
 
 error = []
 
+# calculate the speed error between sumo result and dataset
 for i in range(1, len(track_meta_data)+1):
     track_id = track_meta_data[i].get('id')
     track_min = track_meta_data[i].get('minXVelocity')

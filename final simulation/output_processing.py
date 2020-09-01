@@ -8,16 +8,10 @@ import re
 source_dir = "C:\\Users\\shaw1\\Desktop\\sumo\\hete\\results"
 file_home = 'C:\\Users\\shaw1\\Desktop\\1.xlsx'
 
-
-
-# Assuming you have some "header" part that are fixed in the file
-
-# (e.g. header.xml)
-
-# get the header
 col = 0
 count = 0
 time = 0
+# count the number of conflicts
 with open(os.path.join(source_dir, 'output_ssm.xml'), 'r') as ff:
 	header_text = ff.readlines()
 	for i in header_text:
@@ -27,12 +21,15 @@ with open(os.path.join(source_dir, 'output_ssm.xml'), 'r') as ff:
 		if 'type="3"' in i:
 			count += 1
 print('number of conflicts=' + str(count))
+
+# count the number of lane-changing
 lc_number = 0
 with open(os.path.join(source_dir, 'LG.xml'), 'r') as ff:
 	header_text1 = ff.readlines()
 	lc_number = len(header_text1) - 60
 	print('number of lane chang= ' + str(lc_number))
 
+# read the simulation time
 
 with open(os.path.join(source_dir, 'full_output_sumo.xml'), 'r') as ff:
 	lines = ff.readlines()

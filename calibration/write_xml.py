@@ -2,7 +2,7 @@ import statistics
 import csv
 from decimal import Decimal
 
-highd_filename = "comb_initial_states.csv"
+highd_filename = "01_initial_states.csv"
 
 
 def read_csv(filename):

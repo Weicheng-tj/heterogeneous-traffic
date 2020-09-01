@@ -51,8 +51,6 @@ def get_initial_speed(data,id):
     #    dataset_id = str(i + 1)
 
 
-
-
 dataset_id = '60'
 track_meta_path = dataset_id + "_tracksMeta.csv"
 track_path = dataset_id + "_tracks.csv"
